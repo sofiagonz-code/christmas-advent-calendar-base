@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎄 Hand-Drawn Interactive Christmas Advent Calendar
 
-## Getting Started
+A cozy, hand-illustrated digital Christmas Advent Calendar web application built with **Next.js (App Router)**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**. 
 
-First, run the development server:
+Designed to feel like an interactive colored-pencil and crayon storybook on textured cream paper (`#F9F7F2`) with warm terracotta outlines (`#C85A48`), this template lets you gift 25 days of personalized memories, date vouchers, music, and surprises.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ What Was Built & Key Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **Hand-Drawn Illustration Aesthetic:** Crafted with custom SVG illustrations, sketchy borders, hanging string lights, falling snow particles, and festive Google Fonts (*Ribeye*, *Ribeye Marrow*, and *Fredoka*).
+* **Screen 1 — The Wrapped Gift House (Cover View):** Features a whimsical house tied at the roof peak with a red bow, a swinging gift tag, customizable recipient lettering across the roof gable, and interactive 3D-hinged double front doors that swing open on click.
+* **Screen 2 — 25 Illustrated Windows (Interior Grid):** A multi-story house layout with 25 uniquely styled windows (arched, scalloped curtains, flower boxes, and ribbons).
+* **Date-Locking & Preview Logic:** Automatically unlocks one window per day from December 1st to December 25th (locked windows gently shake with a *"Patience! Unlocks Dec X"* tooltip)[cite: 8], plus a configurable `previewAllUnlocked` state for testing.
+* **Screen 3 — 3D Shutter Surprise Modal:** Clicking an unlocked window zooms in and swings open double 3D shutters—revealing handwritten messages printed on the *inside* of the left and right shutters alongside three surprise formats[cite: 8]:
+  1. **Memory Photos:** Polaroid-style framed photos with washi tape and personal notes.
+  2. **Gift & Date Vouchers:** Perforated digital coupons with location tags, external store/restaurant links, and a clickable *"Claimed"* stamp overlay.
+  3. **Love Notes, Songs & Secret Clues:** Interactive vinyl/cassette card with built-in audio preview, Spotify links, and a confetti celebration trigger.
+* **Built-In Web Audio Synthesizer:** Generates cozy music-box holiday melodies, shutter-opening chimes, and locked-window sound effects natively via the Web Audio API—with zero external audio files required.
+* **Browser Persistence:** Saves opened windows and redeemed vouchers automatically in `localStorage`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+* **Framework:** [Next.js 16 (App Router)](https://nextjs.org/)
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS v4 + Custom SVG Filters
+* **Animations:** [Framer Motion](https://www.framer.com/motion/) (3D perspective door/shutter hinges, spring physics, confetti)
+* **Icons:** [Lucide React](https://lucide.dev/)
+* **Audio:** Native Web Audio API
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📋 Prerequisites (What You Need to Use It)
 
-## Deploy on Vercel
+Before running or customizing this project, make sure you have:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Node.js** (version `18.18` or `20+` recommended) installed on your computer.
+2. **npm** (comes bundled with Node.js).
+3. A code editor like **VS Code**.
+4. *(Optional)* A free **GitHub** and **Vercel** account if you want to publish your customized calendar online and share a mobile-friendly link.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🚀 Getting Started (Local Setup)
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/YOUR_USERNAME/christmas-advent-calendar-base.git](https://github.com/YOUR_USERNAME/christmas-advent-calendar-base.git)
+   cd christmas-advent-calendar-base/charlie-advent-calendar
