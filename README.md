@@ -4,6 +4,8 @@ A cozy, hand-illustrated digital Christmas Advent Calendar web application built
 
 Designed to feel like an interactive colored-pencil and crayon storybook on textured cream paper (`#F9F7F2`) with warm terracotta outlines (`#C85A48`), this template lets you gift 25 days of personalized memories, date vouchers, music, and surprises.
 
+NOTE: Works on both mobile and laptop.
+
 ---
 
 ## ✨ What Was Built & Key Features
